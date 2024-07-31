@@ -1,6 +1,6 @@
 # Task 1: Menu Initialisation
 def initialize_menu():
-    menu = {
+    return {
         "Appetizers": [
             {
                 "name": "Spinach and Artichoke Dip",
@@ -63,14 +63,12 @@ def initialize_menu():
             }
         ]
     }
-    return menu
 
 
 # Task 2: Add a dish
 # Task 3: Update a dish price
 # Task 4: Display Menu
 # Task 5: Search for a dish
-
 # Main Program
 def main():
     menu = initialize_menu()
@@ -81,5 +79,24 @@ def main():
         print("4.Search for a dish")
         print("5.Exit")
 
+        choice = input("Choice : ")
+
+        if choice == "1":
+            # call add dishes function
+            pass
+        elif choice == "2":
+            # update dishes function
+            pass
+        elif choice == "3":
+            # Display Menu function
+            pass
+        elif choice == "4":
+            # search dish function
+            pass
+        elif choice == "5":
+            # exit program
+            exit(0)
 
 
+if __name__ == '__main__':
+    main()
