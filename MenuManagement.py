@@ -1,5 +1,7 @@
 from SearchDish import print_dish
 from UpdateDish import update_dish
+from DisplayDishes import display_menu
+from AddDishes import add_dish
 
 
 # Task 1: Menu Initialisation
@@ -71,29 +73,32 @@ def initialize_menu():
 
 # Task 2: Add a dish
 # Task 3: Update a dish price
-# Task 4: Display Menu
 # Task 5: Search for a dish
+
 # Main Program
 def main():
     menu = initialize_menu()
     while True:
-        print("1.Add a dish")
-        print("2.Update a dish price")
-        print("3.Display Menu")
-        print("4.Search for a dish")
-        print("5.Exit")
+        print("             ===========================")
+        print("                   Main Menu")
+        print("             ===========================")
+        print("                 1.Add a dish")
+        print("                 2.Update a dish price")
+        print("                 3.Display Menu")
+        print("                 4.Search for a dish")
+        print("                 5.Exit")
 
         choice = input("Choice : ")
 
         if choice == "1":
-            # call add dishes function
-            pass
+           add_dish(menu)
+           input("Press enter to continue...")
         elif choice == "2":
             update_dish(menu)
             input("Press enter to continue...")
         elif choice == "3":
-            # Display Menu function
-            pass
+            display_menu(menu)
+            input("Press Enter To Continue...")
         elif choice == "4":
             print_dish(menu)
             input("Press enter to continue...")
