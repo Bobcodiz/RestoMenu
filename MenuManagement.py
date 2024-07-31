@@ -91,8 +91,8 @@ def main():
         choice = input("Choice : ")
 
         if choice == "1":
-           add_dish(menu)
-           input("Press enter to continue...")
+            add_dish(menu)
+            input("Press enter to continue...")
         elif choice == "2":
             update_dish(menu)
             input("Press enter to continue...")
