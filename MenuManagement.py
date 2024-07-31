@@ -1,4 +1,5 @@
 from SearchDish import print_dish
+from UpdateDish import update_dish
 
 
 # Task 1: Menu Initialisation
@@ -8,20 +9,20 @@ def initialize_menu():
             {
                 "name": "Spinach and Artichoke Dip",
                 "description": "Creamy spinach, artichokes, and Parmesan cheese",
-                "price": 7.55,
+                "price": 10.00,
                 "category": "Appetizers"
             },
             {
                 "name": "Caesar Salad",
                 "description": "Crisp romaine lettuce, croutons, and Caesar dressing",
-                "price": 8.34,
+                "price": 5.30,
                 "category": "Appetizers"
 
             },
             {
                 "name": "Garlic Parmesan Wings",
                 "description": "Crispy chicken wings, garlic butter, and Parmesan cheese",
-                "price": 9.90,
+                "price": 12.25,
                 "category": "Appetizers"
             }
         ],
@@ -49,19 +50,19 @@ def initialize_menu():
             {
                 "name": "Chocolate Lava Cake",
                 "description": "Rich chocolate cake, molten chocolate center, and vanilla ice cream",
-                "price": 5.75,
+                "price": 50.75,
                 "category": "Desserts"
             },
             {
                 "name": "Blueberry Cheesecake",
                 "description": "Creamy cheesecake, blueberry compote, and graham cracker crust",
-                "price": 7.89,
+                "price": 14.30,
                 "category": "Desserts"
             },
             {
                 "name": "Tiramisu",
                 "description": "Coffee-flavored dessert, mascarpone cheese, and cocoa powder",
-                "price": 8.90,
+                "price": 18.90,
                 "category": "Desserts"
             }
         ]
@@ -88,8 +89,7 @@ def main():
             # call add dishes function
             pass
         elif choice == "2":
-            # update dishes function
-            pass
+            menu = update_dish(menu)
         elif choice == "3":
             # Display Menu function
             pass
