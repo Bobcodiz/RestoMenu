@@ -93,6 +93,7 @@ def main():
             update_dish(menu)
         elif choice == "3":
             display_menu(menu)
+            input("Press Enter To Continue")
         elif choice == "4":
             print_dish(menu)
         elif choice == "5":
