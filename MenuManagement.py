@@ -1,3 +1,6 @@
+from SearchDish import print_dish
+
+
 # Task 1: Menu Initialisation
 def initialize_menu():
     return {
@@ -91,8 +94,7 @@ def main():
             # Display Menu function
             pass
         elif choice == "4":
-            # search dish function
-            pass
+            print_dish(menu)
         elif choice == "5":
             # exit program
             exit(0)
