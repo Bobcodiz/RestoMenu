@@ -65,7 +65,21 @@ def initialize_menu():
     }
     return menu
 
+
 # Task 2: Add a dish
 # Task 3: Update a dish price
 # Task 4: Display Menu
 # Task 5: Search for a dish
+
+# Main Program
+def main():
+    menu = initialize_menu()
+    while True:
+        print("1.Add a dish")
+        print("2.Update a dish price")
+        print("3.Display Menu")
+        print("4.Search for a dish")
+        print("5.Exit")
+
+
+
