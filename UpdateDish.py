@@ -21,7 +21,7 @@ def update_dish(menu):
 
 
 def read_price():
-    trials = 10
+    trials = 5
     while trials > 0:
         try:
             price = input("\tEnter The Dish Price : ")
