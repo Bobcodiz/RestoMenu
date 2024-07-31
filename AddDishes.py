@@ -22,7 +22,6 @@ def add_dish(menu):
             updated = {"name": name, "description": description, "price": p,"category": category}
             menu_to_update.append(updated)
             print("Appetizer added successfully")
-            return menu_to_update
         except Exception as e:
             print("could not add the item to the menu")
             print(e)
@@ -38,7 +37,6 @@ def add_dish(menu):
             updated = {"name": name, "description": description, "price": p, "category": category}
             menu_to_update.append(updated)
             print("Main course added successfully")
-            return menu_to_update
         except Exception as e:
             print("could not add the item to the menu")
             print(e)
@@ -54,7 +52,6 @@ def add_dish(menu):
             updated = {"name": name, "description": description, "price": p, "category": category}
             menu_to_update.append(updated)
             print("Dessert added successfully")
-            return menu_to_update
         except Exception as e:
             print("could not add the dessert")
             print(e)
