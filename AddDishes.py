@@ -19,7 +19,7 @@ def add_dish(menu):
             p = UpdateDish.read_price()
 
             menu_to_update = menu.get("Appetizers")
-            updated = {"name": name, "description": description, "price": p}
+            updated = {"name": name, "description": description, "price": p,"category": category}
             menu_to_update.append(updated)
             print("Appetizer added successfully")
             return menu_to_update
@@ -35,7 +35,7 @@ def add_dish(menu):
             p = UpdateDish.read_price()
 
             menu_to_update = menu.get("Main Courses")
-            updated = {"name": name, "description": description, "price": p}
+            updated = {"name": name, "description": description, "price": p, "category": category}
             menu_to_update.append(updated)
             print("Main course added successfully")
             return menu_to_update
@@ -50,7 +50,7 @@ def add_dish(menu):
             p = UpdateDish.read_price()
 
             menu_to_update = menu.get("Desert")
-            updated = {"name": name, "description": description, "price": p}
+            updated = {"name": name, "description": description, "price": p, "category": category}
             menu_to_update.append(updated)
             print("Dessert added successfully")
             return menu_to_update
