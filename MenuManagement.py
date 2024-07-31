@@ -1,24 +1,28 @@
+from SearchDish import print_dish
+from UpdateDish import update_dish
+
+
 # Task 1: Menu Initialisation
 def initialize_menu():
-    menu = {
+    return {
         "Appetizers": [
             {
                 "name": "Spinach and Artichoke Dip",
                 "description": "Creamy spinach, artichokes, and Parmesan cheese",
-                "price": 7.55,
+                "price": 10.00,
                 "category": "Appetizers"
             },
             {
                 "name": "Caesar Salad",
                 "description": "Crisp romaine lettuce, croutons, and Caesar dressing",
-                "price": 8.34,
+                "price": 5.30,
                 "category": "Appetizers"
 
             },
             {
                 "name": "Garlic Parmesan Wings",
                 "description": "Crispy chicken wings, garlic butter, and Parmesan cheese",
-                "price": 9.90,
+                "price": 12.25,
                 "category": "Appetizers"
             }
         ],
@@ -46,31 +50,29 @@ def initialize_menu():
             {
                 "name": "Chocolate Lava Cake",
                 "description": "Rich chocolate cake, molten chocolate center, and vanilla ice cream",
-                "price": 5.75,
+                "price": 50.75,
                 "category": "Desserts"
             },
             {
                 "name": "Blueberry Cheesecake",
                 "description": "Creamy cheesecake, blueberry compote, and graham cracker crust",
-                "price": 7.89,
+                "price": 14.30,
                 "category": "Desserts"
             },
             {
                 "name": "Tiramisu",
                 "description": "Coffee-flavored dessert, mascarpone cheese, and cocoa powder",
-                "price": 8.90,
+                "price": 18.90,
                 "category": "Desserts"
             }
         ]
     }
-    return menu
 
 
 # Task 2: Add a dish
 # Task 3: Update a dish price
 # Task 4: Display Menu
 # Task 5: Search for a dish
-
 # Main Program
 def main():
     menu = initialize_menu()
@@ -81,5 +83,22 @@ def main():
         print("4.Search for a dish")
         print("5.Exit")
 
+        choice = input("Choice : ")
+
+        if choice == "1":
+            # call add dishes function
+            pass
+        elif choice == "2":
+            menu = update_dish(menu)
+        elif choice == "3":
+            # Display Menu function
+            pass
+        elif choice == "4":
+            print_dish(menu)
+        elif choice == "5":
+            # exit program
+            exit(0)
 
 
+if __name__ == '__main__':
+    main()
