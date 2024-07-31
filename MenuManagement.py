@@ -1,6 +1,7 @@
 from SearchDish import print_dish
 from UpdateDish import update_dish
 from DisplayDishes import display_menu
+from AddDishes import add_dish
 
 
 # Task 1: Menu Initialisation
@@ -87,8 +88,8 @@ def main():
         choice = input("Choice : ")
 
         if choice == "1":
-            # call add dishes function
-            pass
+           add_dish(menu)
+           input("Press enter to continue...")
         elif choice == "2":
             update_dish(menu)
             input("Press enter to continue...")
