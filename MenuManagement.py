@@ -90,7 +90,7 @@ def main():
             # call add dishes function
             pass
         elif choice == "2":
-            menu = update_dish(menu)
+            update_dish(menu)
         elif choice == "3":
             display_menu(menu)
         elif choice == "4":
