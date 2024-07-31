@@ -12,50 +12,42 @@ def add_dish(menu):
 
     category = input('Enter the category of dish to add: ')
 
-    if category == '1':
+    if category == '1' or category == 'Appetizers':
         try:
             name = input('Enter the name of the Appetizer: ')
             description = input('Enter the description of the dish (Ingredients): ')
             p = UpdateDish.read_price()
-
-            menu_to_update = menu.get("Appetizers")
-            updated = {"name": name, "description": description, "price": p,"category": category}
-            menu_to_update.append(updated)
+            menu["Appetizers"].append({"name": name, "description": description, "price": p, "category": "Appetizers"})
             print("Appetizer added successfully")
-            return menu_to_update
+
         except Exception as e:
             print("could not add the item to the menu")
             print(e)
             return
 
-    elif category == '2':
+    elif category == '2' or category == 'Main Courses':
         try:
             name = input('Enter the name of the Main Course Dish: ')
             description = input('Enter the description of the dish  (Ingredients): ')
             p = UpdateDish.read_price()
-
-            menu_to_update = menu.get("Main Course")
-            updated = {"name": name, "description": description, "price": p, "category": category}
-            menu_to_update.append(updated)
+            menu["Main Course"].append(
+                {"name": name, "description": description, "price": p, "category": "Main Course"})
             print("Main course added successfully")
-            return menu_to_update
         except Exception as e:
             print("could not add the item to the menu")
             print(e)
             return
-
-    elif category == '3':
+    elif category == '3' or category == 'Desserts':
         try:
             name = input('Enter the name of the Dessert: ')
             description = input('Enter the description of the dish (Ingredients): ')
             p = UpdateDish.read_price()
-
-            menu_to_update = menu.get("Desserts")
-            updated = {"name": name, "description": description, "price": p, "category": category}
-            menu_to_update.append(updated)
+            menu["Desserts"].append({"name": name, "description": description, "price": p, "category": "Desserts"})
             print("Dessert added successfully")
-            return menu_to_update
         except Exception as e:
             print("could not add the dessert")
             print(e)
             return
+    else:
+        print("Invalid category")
+        return add_dish(menu)
