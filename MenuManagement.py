@@ -98,12 +98,15 @@ def main():
             input("Press enter to continue...")
         elif choice == "3":
             display_menu(menu)
+            input("Press Enter To Continue...")
         elif choice == "4":
             print_dish(menu)
             input("Press enter to continue...")
         elif choice == "5":
             # exit program
             exit(0)
+        else:
+            print("\t\tInvalid Choice!")
 
 
 if __name__ == '__main__':
