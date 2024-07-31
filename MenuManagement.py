@@ -100,6 +100,8 @@ def main():
         elif choice == "5":
             # exit program
             exit(0)
+        else:
+            print("\t\tInvalid Choice!")
 
 
 if __name__ == '__main__':
