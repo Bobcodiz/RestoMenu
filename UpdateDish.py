@@ -13,7 +13,7 @@ def update_dish(menu):
     dish_price = read_price()
 
     if dish_price is None:
-        print("Returning To Menu.")
+        print("Returning To Main Menu.")
         return
 
     dish['price'] = dish_price
