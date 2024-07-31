@@ -90,11 +90,13 @@ def main():
             pass
         elif choice == "2":
             update_dish(menu)
+            input("Press enter to continue...")
         elif choice == "3":
             # Display Menu function
             pass
         elif choice == "4":
             print_dish(menu)
+            input("Press enter to continue...")
         elif choice == "5":
             # exit program
             exit(0)
