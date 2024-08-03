@@ -7,5 +7,4 @@ def display_menu(menu):
             print(f"Name: {dish['name']}")
             print(f"Description: {dish['description']}")
             print(f"Price: ${dish['price']}")
-            print(f"Category: {dish['category']}")
             print()
